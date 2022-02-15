@@ -1,0 +1,85 @@
+<!-- https://www.w3schools.com/html/html_form_input_types.asp -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale1.0">
+        <meta charset="utf-8">
+        <title>Jacob Schneider Assignment 03</title>
+		<link rel="sytlesheet" type="text/css" href="https://people.rit.edu/jas6417/iste240/Exercise3/styles03.css" />
+	</head>
+
+	<script>
+	</script>
+
+<form action = "process.php" method = "GET">
+	<body>
+		<header>
+			<img id="logo" src="logo.png" alt="Old Saybrook Logo"/>
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#Activities">Activities</a></li>
+					<li><a href="#Food">Food</a></li>
+					<li><a href="#Rest">Rest</a></li>
+					<li><a href="#People">People</a></li>
+					<li><a href="#Facebook">Facebook</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="headingquestion">
+			<h2 class = "underline"> <!-- add bottom border to this -->
+				Please tell us about your visit
+			</h2>
+		</div>
+
+		Enter your name
+		<input type ="text" id="visitor" name ="visitor"
+				placeholder="Required Entry" >
+		<span class="astric"> * </span>
+
+
+		<!-- Group number form-->
+			How many people in your group:
+			<input type ="number" name ="groupNum" min ="0" max ="100" step ="1"
+					value ="6" style = "margin-bottom: 20px;" >
+
+		<!-- Date documenting when they visited -->
+			When did you visit?
+			<input type = "date" id="visitDate" name = "vdate" />
+			<span class="astric"> * </span><br />
+			<p id="errorMessage"></p>
+
+		<!-- Field Set for favorite place -->
+		<fieldset>
+		<legend>Favorite Place - Must Select one</legend>
+		<input type="radio" name="fplace" value="Baseball Field" id="bf"><label for="bf">Baseball Field</label><br>
+		<input type="radio" name="fplace" value="Museum" id="mu"><label for = "mu">Museum</label><br>
+		<input type="radio" name="fplace" value="Luigis Italian Restaurant"  id="ir" ><label for ="ir">Luigis Italian Restaurant</label><br>
+		</fieldset>
+
+		<!-- Scrollbar for town raiting -->
+		<br>Please rate Old Saybrook, CT<br>
+		<p>0
+		<input type="range" name="rating" min="0" max="10" step="1" list="set">
+		<datalist id = "set">
+		<option>0</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		<option>6</option>
+		<option>7</option>
+		<option>8</option>
+		<option>9</option>
+		<option>10</option>
+		</datalist>
+		10</p>
+
+		<div id="button">
+			<input type = "submit"  >
+		</div><!-- end of div for submit button -->
+	</body>
+</form>
+</html>
