@@ -1,20 +1,12 @@
-header {
-    background-color: rgb(28, 29, 102);
+.MyFloatRight {
+    float: right;
+    margin-left: 5px;
 }
 
 #logo {
-    float: left;
-    margin-right: 10em;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    display: inline;
+    height: 100%;
+    width: auto;
+    padding: 1em;
 }
 
 
@@ -63,15 +55,15 @@ float: right;
 
 /* Responsive navigation menu (for mobile devices) */
 @media screen and (max-width: 600px) {
-.topnav a, .topnav-right {
-    float: none;
-    display: block;
-}
+    .topnav a, .topnav-right {
+        float: none;
+        display: block;
+    }
 
-.topnav-centered a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-}
+    .topnav-centered a {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
 }
