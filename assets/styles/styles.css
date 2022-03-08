@@ -38,9 +38,9 @@ li a:hover {
     margin-right: auto;
     width: 50%;
 }
-.MyFloatRight {
+.myFloatRight {
     float: right;
-    margin-left: 2em;
+    margin-left: 1em;
 }
 
 
