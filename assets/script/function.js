@@ -5,13 +5,13 @@ function showSlides() {
   var index;
   var images = document.getElementsByClassName("mySlides");
   var circles = document.getElementsByClassName("dot");
-  for (index = 0; index < images.length; index++) {
-    images[index].style.display = "none";
+  for (index = 0; index < 3; index++) {
+    images[index].style.display = "none";  
   }
   slideIndex++;
   if (slideIndex > images.length) {slideIndex = 1}    
   for (index = 0; index < circles.length; index++) {
-    circles[i].className = circles[index].className.replace(" active", "");
+    circles[index].className = circles[index].className.replace(" active", "");
   }
   images[slideIndex-1].style.display = "block";  
   circles[slideIndex-1].className += " active";
