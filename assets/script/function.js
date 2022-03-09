@@ -2,18 +2,18 @@ var slideIndex = 0;
 showSlides();
 
 function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+  var index;
+  var images = document.getElementsByClassName("mySlides");
+  var circles = document.getElementsByClassName("dot");
+  for (index = 0; index < images.length; index++) {
+    images[index].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+  if (slideIndex > images.length) {slideIndex = 1}    
+  for (index = 0; index < circles.length; index++) {
+    circles[i].className = circles[index].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  images[slideIndex-1].style.display = "block";  
+  circles[slideIndex-1].className += " active";
   setTimeout(showSlides, 3500);
 }
