@@ -10,26 +10,22 @@ body {
 }
 
     /* nav */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.navbar {
     overflow: hidden;
     text-align: center;
-    position: sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
-li {
-    display: inline-block;
-    position: sticky;
-}
-li a {
+.navbar a {
+    float: left;
     display: block;
-    color: white;
+    color: #f2f2f2;
     text-align: center;
     padding: 1em 1.2em;
     text-decoration: none;
 }
-li a:hover {
+.navbar a:hover {
     background-color: #111;
 }
 
