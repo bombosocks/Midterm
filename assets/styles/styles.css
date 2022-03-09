@@ -12,6 +12,7 @@ body {
     /* nav */
 .navbar {
     background-image: linear-gradient(to right, #333, #39325e, #333);
+    z-index: 9999;
     overflow: hidden;
     text-align: center;
     position: fixed;
