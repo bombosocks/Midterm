@@ -28,7 +28,7 @@ body {
     border-radius: 1em;
     margin-top: 2.8em;
     margin-right: .5em;
-    padding: 1em 1.2em;
+    padding: .8em 1em;
     text-decoration: none;
 }
 .navbar a:hover {
@@ -50,12 +50,14 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 1em 1.2em;
+    padding: .8em 1em;
     text-decoration: none;
 }
 li a:hover {
     background-color: #111;
 }
+
+.navText {font-size: small;}
 
     /* directional */
 .center {
@@ -149,3 +151,10 @@ html {
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+/* media queries */
+@media only screen and (max-width: 884px) {
+    body {
+      background-color: lightblue;
+    }
+  }
