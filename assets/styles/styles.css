@@ -57,7 +57,9 @@ li a:hover {
     background-color: #111;
 }
 
-.navText {font-size: small;}
+.navText {
+    font-size: small;
+}
 
     /* directional */
 .center {
