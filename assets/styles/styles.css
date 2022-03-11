@@ -10,7 +10,7 @@ body {
 }
 
     /* nav */
-.navbar {
+#navbar {
     background-image: linear-gradient(to right, #333, #39325e, #333);
     z-index: 9999;
     overflow: hidden;
@@ -20,19 +20,29 @@ body {
     padding: auto;
     width: 100%;
 }
-.navbar a {
+
+#navbar a {
     float: right;
     display: block;
     color: #f2f2f2;
     text-align: center;
     border-radius: 1em;
-    margin-top: 2.8em;
+    margin-top: 4.65em;
     margin-right: .5em;
     padding: .8em 1em;
     text-decoration: none;
 }
-.navbar a:hover {
+
+#navbar a.active {
     background-color: #111;
+}
+#navbar a:hover {
+    background-color: #111;
+}
+
+
+.navText {
+    font-size: small;
 }
 
 ul {
@@ -41,7 +51,8 @@ ul {
     padding: 0;
     overflow: hidden;
     text-align: center;
-    width: 100%
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.644);
 }
 li {
     display: inline-block;
@@ -55,10 +66,6 @@ li a {
 }
 li a:hover {
     background-color: #111;
-}
-
-.navText {
-    font-size: small;
 }
 
     /* directional */
@@ -132,9 +139,6 @@ html {
   transition: background-color 0.6s ease;
 }
 
-.active {
-  background-color: #717171;
-}
 
 /* Fading animation */
 .fade {
