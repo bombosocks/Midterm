@@ -126,6 +126,10 @@ html {
     margin-bottom: 3em;
 }
 
+.pic_start {
+    height: 20em;
+    width: auto;
+}
 /* Slideshow container */
 .slideshowContainer {
   max-width: 50em;
