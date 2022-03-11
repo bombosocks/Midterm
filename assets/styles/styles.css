@@ -120,7 +120,7 @@ html {
     box-sizing: border-box;
 }
 
-#street_pic {
+.pic {
     height: 20em; 
     width: auto;
     margin-bottom: 3em;
