@@ -20,8 +20,12 @@
 <body>
   <h1 style="padding-top:3em">Visiting Main Street</h1>
 
-  <img class="myFloatLeft" style="height: 20em; width: auto; margin-bottom: 3em;" alt="Modern Main Street and old Main Street" 
-  src="assets/images/modernStreet.jpg" onmouseover="change('"/>
+
+  <!-- change on mouse -->
+  <img class="myFloatLeft" id="street_pic" src="assets/images/modernStreet.jpg"
+    onmouseover="change('street_pic', 'assets/images/oldStreet.jpeg')"
+    onmouseout="change('street_pic', 'assets/images/modernStreet.jpg')"
+      alt="Modern Main Street and old Main Street" />
 
   <h1>Quante and Busy</h1>
 

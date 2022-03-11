@@ -120,6 +120,11 @@ html {
     box-sizing: border-box;
 }
 
+#street_pic {
+    height: 20em; 
+    width: auto; 
+    margin-bottom: 3em;
+}
 
 /* Slideshow container */
 .slideshowContainer {
